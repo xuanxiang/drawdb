@@ -1,5 +1,6 @@
 # Stage 1: Build the app
-FROM node:20-alpine AS build
+# FROM node:20-alpine AS build
+FROM registry.cn-hangzhou.aliyuncs.com/library/node:20-alpine
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
